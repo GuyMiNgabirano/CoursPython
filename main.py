@@ -3,9 +3,35 @@
 #def myfunction(nom):
 #   print("Bonjour " +nom)
 if __name__ == '__main__':
-    def myfunction(nom):
+    #Les collections
+    """
+    1.Les lists [] sont ordonnées et changeables
+    2.Les tuples () sont ordonnées et inchangeables
+    3.Les sets {} ne sont pas ordonnées, inchangeables, non index
+    4.Les dictionnaires {}
+    """
+    #Les listes
+    fruits = ['Mangue', 'Banane','Avocat']
+
+    #Affichage avant insertion d'un nouveau fruit
+    print("----------Affichage avant insertion d'un nouveau fruit--------")
+
+    for f in fruits:
+        print(f)
+    
+    print("----------Affichage apres insertion d'un nouveau fruit--------")
+
+    fruits.insert(2, 'Pasteque')
+    #fruits.append('Pasteque')
+    for f in fruits:
+        print(f)
+    """student = {"nom": "Ngabirano",
+             "Prenom": "Guy Michel",
+             "adresse":"Bujumbura-Ngagara"}"""
+
+    """def myfunction(nom):
         print("Bonjour " +nom)
-    myfunction("Guy")
+    myfunction("Guy")"""
 
    #x,y,z=1,2,3
    #print(x)
