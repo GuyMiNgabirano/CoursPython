@@ -1,8 +1,42 @@
+from classes.Student import showStudent,printing
 #x = "Python est magique"
 #print(x)
 #def myfunction(nom):
 #   print("Bonjour " +nom)
 if __name__ == '__main__':
+    print("--------Afficher Bonjour-------")
+
+    showStudent()
+    
+    print("--------Afficher Printing-------")
+
+    printing()
+
+    """class Personne:
+        def __init__(self,name,age):
+            self.name=name
+            self.age=age
+
+        def __str__(self) -> str:
+            pass
+            #String laterale
+            #Gabarit des Latereaux
+            #return f"{self.name}({self.age})"
+
+        def showPerson(self):
+            print(self.name,self.age)
+    print("--------Affichage de la classe parrent-------")
+    p= Personne("Jean",23)
+    print(p.name)
+    print("--------Affichage de la classe dérivée-------")
+    class Student(Personne):
+        def __init__(self,name,age, adress):
+            self.name=name
+            self.age=age
+            self.adress=adress
+    s = Student("Yves",20,"Ngagara")
+    print(s.adress)"""
+    #print(s.name, s.age)
     #Les collections
     """
     1.Les lists [] sont ordonnées et changeables
@@ -11,11 +45,12 @@ if __name__ == '__main__':
     4.Les dictionnaires {}
     """
     #Les listes
-    fruits = ['Mangue', 'Banane','Avocat']
+    #fruits = ['Mangue', 'Banane','Avocat']
 
     #Affichage avant insertion d'un nouveau fruit
-    print("----------Affichage avant insertion d'un nouveau fruit--------")
-
+    #print("----------Affichage avant insertion d'un nouveau fruit--------")
+    #print(fruits[0:1])
+    """
     for f in fruits:
         print(f)
     
@@ -24,10 +59,33 @@ if __name__ == '__main__':
     fruits.insert(2, 'Pasteque')
     #fruits.append('Pasteque')
     for f in fruits:
-        print(f)
+        print(f)"""
     """student = {"nom": "Ngabirano",
              "Prenom": "Guy Michel",
              "adresse":"Bujumbura-Ngagara"}"""
+    #Les sets 
+    """jours={"Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi","Dimanche"}
+    
+    for j in jours:
+        print(j)"""
+    #Les dictionnaires
+    """students={"first_name":"Guy Michel",
+             "last_name":"Ngabirano",
+             "tel":"67868689",
+             "email":"ngabiranog8@gmail.com"}
+
+    print("----------Affichage des cles--------")
+    
+    for x in students.keys():
+        print(x)
+    print("----------Affichage des valeurs--------")
+
+    for s in students.values():
+        print(s)
+
+    print("----------Affichage des cles/valeurs--------")
+    for k,v in students.items():
+        print(f"{k}:{v}")"""
 
     """def myfunction(nom):
         print("Bonjour " +nom)
